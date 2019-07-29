@@ -28,6 +28,8 @@ trait Configuration {
 
   val maxJunction = 328                                             /** Input: Largest Junction In The Network, This Is How The Network Is Called e.g. 328 network **/
 
+  val agentsNumber = 1746608
+
   val netSize: Int = maxJunction + 1                                /** Network Size **/
 
   val exitsCount: Array[(Int, Int)] = Array.range(0, netSize) zip new Array[Int](netSize)   /** This is the main data structure holding exits numbers and corresponding number of agents

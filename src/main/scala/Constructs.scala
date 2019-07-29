@@ -3,6 +3,8 @@ import scala.collection.mutable.{ListBuffer, Map}
 
 object Constructs extends Configuration {
 
+  var runTime = 0
+
   def sum(xs: List[Int]): List[Int] = {
     @tailrec
     def inner(xs: List[Int], accum: Int, res: ListBuffer[Int]): ListBuffer[Int] = {
@@ -21,8 +23,9 @@ object Constructs extends Configuration {
 
   def run(): Unit = {
     val r = new scala.util.Random
-    for (_ <- 0 to 1746608) {
+    for (_ <- 0 to agentsNumber) {
 
+      runTime += 1
       var x = 0; var y = 0; var E = 0 //starting point
       var d = math.round(r.nextFloat()); var T: Double = 0
 
@@ -66,6 +69,14 @@ object Constructs extends Configuration {
 
       if (isMultiple) updateBins
     }
+
+    //Display bins
+    map.foreach(elem => {
+      println("Bin: " + elem._1)
+      elem._2.foreach(exits => print(" -- " + exits))
+      println()
+    })
+
     //exitsCount.foreach(e => println(e._1, e._2))
     //println(totalTime)
 
@@ -112,16 +123,11 @@ object Constructs extends Configuration {
     exitsCount.foreach {
       e => elementUpdate(e)
     }
-
-    //Display bins
-    map.foreach(elem => {
-      println("Bin: " + elem._1)
-      elem._2.foreach(exits => print(" -- " + exits))
-      println()
-    })
-
+    
     //empty your bins for your next cycle
-    map.clear()
+    if (runTime != agentsNumber + 1) {
+      map.clear()
+    }
   }
 
   /**

@@ -4,7 +4,7 @@
 		module="ssp-readout$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190729092908"
+		publication="20190729161744"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
