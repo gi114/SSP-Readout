@@ -64,10 +64,10 @@ object Constructs extends Configuration {
       exitsCount(x) = update(exitsCount(x))
       totalTime = totalTime + T.toLong
 
-      //if (isMultiple) updateBins
+      if (isMultiple) updateBins
     }
-    exitsCount.foreach(e => println(e._1, e._2))
-    println(totalTime)
+    //exitsCount.foreach(e => println(e._1, e._2))
+    //println(totalTime)
 
   }
 
@@ -83,8 +83,10 @@ object Constructs extends Configuration {
     */
 
   def isMultiple: Boolean = {
+    // Why make it an Integer? You only interested in whole number before decimal point to know how many times you passed the binCycle
     val newMultiple = (totalTime/binCycle).toInt
 
+    // When you obtain a new multiple, new time you passed the binCycle, then you update your bins
     /** Condition for binning **/
     val condition: Boolean = newMultiple > currentMultiple
     if (condition) {
@@ -105,13 +107,21 @@ object Constructs extends Configuration {
   def updateBins: Unit = {
 
     /** ask the question, in what range of multiples are they? try minValue/binSize, catch exceptions in case.
-       the division will tell you in what bin it will be **/
+       the division will tell you into what bin that exit will fall **/
 
     exitsCount.foreach {
       e => elementUpdate(e)
     }
 
-    //TODO: display bins
+    //Display bins
+    map.foreach(elem => {
+      println("Bin: " + elem._1)
+      elem._2.foreach(exits => print(" -- " + exits))
+      println()
+    })
+
+    //empty your bins for your next cycle
+    map.clear()
   }
 
   /**
@@ -122,7 +132,7 @@ object Constructs extends Configuration {
     */
 
   def elementUpdate(e: (Int, Int)): Unit = {
-    val binKey = e._2/binSize
+    val binKey = e._2/binSize //what bin key it will fall into
 
     /**check if binKey exists in map and add it if not**/
     if (!map.contains(binKey)) map.addOne((binKey, ListBuffer.empty[Int]))
