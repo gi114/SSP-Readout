@@ -1,25 +1,8 @@
-import scala.annotation.tailrec
 import scala.collection.mutable.{ListBuffer, Map}
 
-object Constructs extends Configuration {
+class Constructs() extends Configuration {
 
   var runTime = 0
-
-  def sum(xs: List[Int]): List[Int] = {
-    @tailrec
-    def inner(xs: List[Int], accum: Int, res: ListBuffer[Int]): ListBuffer[Int] = {
-      xs match {
-        case x :: tail => {
-          val acc = accum + x
-          res.append(acc)
-          inner(tail, acc, res)
-        }
-        case Nil => res
-      }
-    }
-    val accum = 1
-    List(accum) ::: inner(xs, accum, ListBuffer[Int]()).toList
-  }
 
   def run(): Unit = {
     val r = new scala.util.Random
@@ -70,7 +53,7 @@ object Constructs extends Configuration {
       if (isMultiple) updateBins
     }
 
-    //Display bins
+    //TODO: Display bins using scalaJS
     map.foreach(elem => {
       println("Bin: " + elem._1)
       elem._2.foreach(exits => print(" -- " + exits))
@@ -123,7 +106,7 @@ object Constructs extends Configuration {
     exitsCount.foreach {
       e => elementUpdate(e)
     }
-    
+
     //empty your bins for your next cycle
     if (runTime != agentsNumber + 1) {
       map.clear()
@@ -138,7 +121,7 @@ object Constructs extends Configuration {
     */
 
   def elementUpdate(e: (Int, Int)): Unit = {
-    val binKey = e._2/binSize //what bin key it will fall into
+    val binKey = getBin(e._2) //what bin key it will fall into
 
     /**check if binKey exists in map and add it if not**/
     if (!map.contains(binKey)) map.addOne((binKey, ListBuffer.empty[Int]))
@@ -147,7 +130,10 @@ object Constructs extends Configuration {
     mutableList.append(e._1)
   }
 
+  def getBin(exitValue: Int): Int = exitValue/binSize
 
 
 }
+
+
 

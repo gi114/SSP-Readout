@@ -1,9 +1,10 @@
-import Constructs._
+
 
 object Simulation {
 
   def main(args: Array[String]): Unit = {
-    run()
+    val constructs = new Constructs()
+    constructs.run()
     //CSVWriter.write(result)
   }
 

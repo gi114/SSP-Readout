@@ -1,3 +1,4 @@
+import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.Map
 
@@ -57,11 +58,25 @@ trait Configuration {
   /** Alternative Methods**/
   val primes: List[Int] = List(5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47) /** Primes in network e.g. in net size 328, cardinality 15 **/
 
-  val sumPrimes: List[Int] = Constructs.sum(primes)                              /** List of Pass Junctions for coordinate y **/
+  val sumPrimes: List[Int] = sum(primes)                              /** List of Pass Junctions for coordinate y **/
 
   val N: Int = sumPrimes.max                                                     /** Network Size **/
 
-
+  def sum(xs: List[Int]): List[Int] = {
+    @tailrec
+    def inner(xs: List[Int], accum: Int, res: ListBuffer[Int]): ListBuffer[Int] = {
+      xs match {
+        case x :: tail => {
+          val acc = accum + x
+          res.append(acc)
+          inner(tail, acc, res)
+        }
+        case Nil => res
+      }
+    }
+    val accum = 1
+    List(accum) ::: inner(xs, accum, ListBuffer[Int]()).toList
+  }
 }
 
 

@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0m/home/giulia/Documents/Biocomputation/SSP-Readout/src/main/scala/CSVWriter.scala:3:8: not found: object Constructs[0m
+[0m[[0m[31merror[0m] [0m[0mimport Constructs.{epsilon, netSize}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/giulia/Documents/Biocomputation/SSP-Readout/src/main/scala/CSVWriter.scala:9:75: not found: value epsilon[0m
+[0m[[0m[31merror[0m] [0m[0m      lazy val outputFile = new BufferedWriter(new FileWriter(s"output_E${epsilon}_$netSize.csv", true))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/giulia/Documents/Biocomputation/SSP-Readout/src/main/scala/CSVWriter.scala:9:85: not found: value netSize[0m
+[0m[[0m[31merror[0m] [0m[0m      lazy val outputFile = new BufferedWriter(new FileWriter(s"output_E${epsilon}_$netSize.csv", true))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/giulia/Documents/Biocomputation/SSP-Readout/src/main/scala/Configuration.scala:60:30: not found: value Constructs[0m
+[0m[[0m[31merror[0m] [0m[0m  val sumPrimes: List[Int] = Constructs.sum(primes)                              /** List of Pass Junctions for coordinate y **/[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

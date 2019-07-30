@@ -1,12 +1,11 @@
 import java.io.{BufferedWriter, FileWriter}
 
-import Constructs.{epsilon, netSize}
 
-object CSVWriter {
+case class CSVWriter(constructs: Constructs) {
 
   def write(res: Array[(Int, (Int, Int))]): Unit = {
     try {
-      lazy val outputFile = new BufferedWriter(new FileWriter(s"output_E${epsilon}_$netSize.csv", true))
+      lazy val outputFile = new BufferedWriter(new FileWriter(s"output_E${constructs.epsilon}_$constructs.netSize.csv", true))
       outputFile.newLine()
       outputFile.write("Exits, Agents_Correct, Agents_Errors")
       res.foreach(s => {

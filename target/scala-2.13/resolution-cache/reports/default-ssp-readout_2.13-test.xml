@@ -7,13 +7,114 @@
 		revision="0.1"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190729161742"/>
+		date="20190730103109"/>
 	<dependencies>
+		<module organisation="org.mockito" name="mockito-core">
+			<revision name="2.23.0" status="release" pubdate="20181005082007" resolver="public" artresolver="public" homepage="https://github.com/mockito/mockito" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="The MIT License" url="https://github.com/mockito/mockito/blob/master/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="17112" time="215" location="/home/giulia/.ivy2/cache/org.mockito/mockito-core/ivy-2.23.0.xml" searched="true" original-local-location="/home/giulia/.ivy2/cache/org.mockito/mockito-core/ivy-2.23.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mockito/mockito-core/2.23.0/mockito-core-2.23.0.pom"/>
+				<caller organisation="default" name="ssp-readout_2.13" conf="test, compile, runtime" rev="2.23.0" rev-constraint-default="2.23.0" rev-constraint-dynamic="2.23.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="mockito-core" type="jar" ext="jar" status="successful" details="" size="565013" time="821" location="/home/giulia/.ivy2/cache/org.mockito/mockito-core/jars/mockito-core-2.23.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mockito/mockito-core/2.23.0/mockito-core-2.23.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="2.6" status="release" pubdate="20170620112837" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3457" time="0" location="/home/giulia/.ivy2/cache/org.objenesis/objenesis/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.pom"/>
+				<caller organisation="org.mockito" name="mockito-core" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="2.23.0"/>
+				<artifacts>
+					<artifact name="objenesis" type="jar" ext="jar" status="no" details="" size="55684" time="0" location="/home/giulia/.ivy2/cache/org.objenesis/objenesis/jars/objenesis-2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.bytebuddy" name="byte-buddy-agent">
+			<revision name="1.9.0" status="release" pubdate="20180929155320" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="5556" time="121" location="/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy-agent/ivy-1.9.0.xml" searched="true" original-local-location="/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy-agent/ivy-1.9.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.0/byte-buddy-agent-1.9.0.pom"/>
+				<caller organisation="org.mockito" name="mockito-core" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="2.23.0"/>
+				<artifacts>
+					<artifact name="byte-buddy-agent" type="jar" ext="jar" status="successful" details="" size="43243" time="741" location="/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy-agent/jars/byte-buddy-agent-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.0/byte-buddy-agent-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.bytebuddy" name="byte-buddy">
+			<revision name="1.9.0" status="release" pubdate="20180929155319" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="9863" time="123" location="/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy/ivy-1.9.0.xml" searched="true" original-local-location="/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy/ivy-1.9.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.0/byte-buddy-1.9.0.pom"/>
+				<caller organisation="org.mockito" name="mockito-core" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="2.23.0"/>
+				<artifacts>
+					<artifact name="byte-buddy" type="jar" ext="jar" status="successful" details="" size="3168701" time="890" location="/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy/jars/byte-buddy-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.9.0/byte-buddy-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.13">
+			<revision name="3.0.8" status="release" pubdate="20190610101956" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4732" time="0" location="/home/giulia/.ivy2/cache/org.scalatest/scalatest_2.13/ivy-3.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.8/scalatest_2.13-3.0.8.pom"/>
+				<caller organisation="default" name="ssp-readout_2.13" conf="test, compile, runtime" rev="3.0.8" rev-constraint-default="3.0.8" rev-constraint-dynamic="3.0.8" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scalatest_2.13" type="bundle" ext="jar" status="no" details="" size="7589881" time="0" location="/home/giulia/.ivy2/cache/org.scalatest/scalatest_2.13/bundles/scalatest_2.13-3.0.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.8/scalatest_2.13-3.0.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.13">
+			<revision name="1.2.0" status="release" pubdate="20190607122354" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3264" time="0" location="/home/giulia/.ivy2/cache/org.scala-lang.modules/scala-xml_2.13/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.13" conf="default, compile, runtime, master" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="3.0.8"/>
+				<artifacts>
+					<artifact name="scala-xml_2.13" type="bundle" ext="jar" status="no" details="" size="568727" time="0" location="/home/giulia/.ivy2/cache/org.scala-lang.modules/scala-xml_2.13/bundles/scala-xml_2.13-1.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.13">
+			<revision name="3.0.8" status="release" pubdate="20190610101828" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2967" time="0" location="/home/giulia/.ivy2/cache/org.scalactic/scalactic_2.13/ivy-3.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.0.8/scalactic_2.13-3.0.8.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.13" conf="default, compile, runtime, master" rev="3.0.8" rev-constraint-default="3.0.8" rev-constraint-dynamic="3.0.8" callerrev="3.0.8"/>
+				<artifacts>
+					<artifact name="scalactic_2.13" type="bundle" ext="jar" status="no" details="" size="723710" time="0" location="/home/giulia/.ivy2/cache/org.scalactic/scalactic_2.13/bundles/scalactic_2.13-3.0.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.0.8/scalactic_2.13-3.0.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.13.0" status="release" pubdate="20190607070157" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.13.0/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2831" time="0" location="/home/giulia/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.13.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0.pom"/>
+				<caller organisation="org.scalactic" name="scalactic_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.8"/>
+				<caller organisation="org.scalatest" name="scalatest_2.13" conf="default, compile, runtime, master" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.8"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3584783" time="0" location="/home/giulia/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.13.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.13.0" status="release" pubdate="20190607070246" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.13.0/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="2.13.0" status="release" pubdate="20190607070246" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.13.0/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2659" time="0" location="/home/giulia/.ivy2/cache/org.scala-lang/scala-library/ivy-2.13.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0.pom"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.13.0"/>
 				<caller organisation="default" name="ssp-readout_2.13" conf="test, compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.1"/>
+				<caller organisation="org.scalactic" name="scalactic_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.8"/>
+				<caller organisation="org.scalatest" name="scalatest_2.13" conf="default, compile, runtime, master" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.8"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.2.0"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5693401" time="0" location="/home/giulia/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0.jar"/>
