@@ -1,52 +1,38 @@
-import scala.collection.mutable.{ListBuffer, Map}
+import akka.actor.{ActorRef, ActorSystem, Props}
 
-class Constructs() extends Configuration {
+import scala.collection.mutable.ListBuffer
 
-  var runTime = 0
+class Constructs() extends Configuration with Constructable {
+
+  private val actorSystem = ActorSystem("BinsProcessing")
+
+  private val actor: ActorRef = actorSystem.actorOf(Props[ActorsTalk], name = "BinsProcessor")
 
   def run(): Unit = {
-    val r = new scala.util.Random
     for (_ <- 0 to agentsNumber) {
 
       runTime += 1
-      var x = 0; var y = 0; var E = 0 //starting point
-      var d = math.round(r.nextFloat()); var T: Double = 0
 
-      while (y < maxJunction) {
+      clearCount()
+
+      while (isNextStep) {
 
         val rand = r.nextFloat()
 
         /** SPLIT JUNCTION **/
         if (split_junctions.contains(y)) {  // split junction, 50-50
-          if (rand < 0.5) {
-            y = y + 1; d = DOWN; T = T + DOWN_time
-          }
-          else {
-            y = y + 1; x = x + 1; d = DIAGONAL; T = T + DIAGONAL_time
-          }
+          processSplitJunction(rand)
+
+
         /** PASS JUNCTION **/
         } else { // pass junction
-          if (d == DOWN && rand > epsilon) {
-            y = y + 1; T = T + DOWN_time
-          }
-          else if (d == DOWN && rand < epsilon) {
-            y = y + 1; x = x + 1; d = DIAGONAL; E = 1; T = T + DIAGONAL_time
-          } else if (d == DIAGONAL && rand > epsilon) {
-            y = y + 1; x = x + 1; T = T + DIAGONAL_time
-          } else if (d == DIAGONAL && rand < epsilon) {
-            y = y + 1; d = DOWN; E = 1; T = T + DOWN_time
-          }
+          processPassJunction(rand)
         }
       }
 
       //update outputs
 
-      if (E == 0) {
-        exit_count(x) = exit_count(x) + 1
-      } else {
-        exit_count_errors(x) = exit_count_errors(x) + E
-      }
-
+      updateCounts()
       exitsCount(x) = update(exitsCount(x))
       totalTime = totalTime + T.toLong
 
@@ -60,6 +46,7 @@ class Constructs() extends Configuration {
       println()
     })
 
+    actorSystem.terminate()
     //exitsCount.foreach(e => println(e._1, e._2))
     //println(totalTime)
 
@@ -107,6 +94,8 @@ class Constructs() extends Configuration {
       e => elementUpdate(e)
     }
 
+    actor ! BinStats(map.toMap)
+
     //empty your bins for your next cycle
     if (runTime != agentsNumber + 1) {
       map.clear()
@@ -131,7 +120,6 @@ class Constructs() extends Configuration {
   }
 
   def getBin(exitValue: Int): Int = exitValue/binSize
-
 
 }
 
