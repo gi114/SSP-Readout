@@ -6,11 +6,12 @@ class Constructs() extends Configuration with Constructable {
 
   private val actorSystem = ActorSystem("BinsProcessing")
 
-  private val actor: ActorRef = actorSystem.actorOf(Props[ActorsTalk], name = "BinsProcessor")
+  private val actor: ActorRef = actorSystem.actorOf(Props[ActorTalk], name = "BinsProcessor")
 
   def run(): Unit = {
     for (_ <- 0 to agentsNumber) {
 
+      count += 1
       runTime += 1
 
       clearCount()
@@ -40,11 +41,7 @@ class Constructs() extends Configuration with Constructable {
     }
 
     //TODO: Display bins using scalaJS
-    map.foreach(elem => {
-      println("Bin: " + elem._1)
-      elem._2.foreach(exits => print(" -- " + exits))
-      println()
-    })
+
 
     actorSystem.terminate()
     //exitsCount.foreach(e => println(e._1, e._2))
@@ -65,15 +62,15 @@ class Constructs() extends Configuration with Constructable {
 
   def isMultiple: Boolean = {
     // Why make it an Integer? You only interested in whole number before decimal point to know how many times you passed the binCycle
-    val newMultiple = (totalTime/binCycle).toInt
+    val newMultiple = count/binCycle
 
     // When you obtain a new multiple, new time you passed the binCycle, then you update your bins
+
     /** Condition for binning **/
-    val condition: Boolean = newMultiple > currentMultiple
-    if (condition) {
+    if (newMultiple > currentMultiple) {
       currentMultiple = newMultiple
-      condition
-    } else !condition
+      true
+    } else false
   }
 
   /**
@@ -93,9 +90,8 @@ class Constructs() extends Configuration with Constructable {
     exitsCount.foreach {
       e => elementUpdate(e)
     }
-
-    actor ! BinStats(map.toMap)
-
+    actor ! BinStats(map.head._1)
+    //count/(agentsNumber/2)
     //empty your bins for your next cycle
     if (runTime != agentsNumber + 1) {
       map.clear()
@@ -121,6 +117,13 @@ class Constructs() extends Configuration with Constructable {
 
   def getBin(exitValue: Int): Int = exitValue/binSize
 
+  def display() = {
+    map.foreach(m => {
+      println("Bin: " + m._1)
+      m._2.foreach(e => print(e + " -- "))
+      println()
+    })
+  }
 }
 
 

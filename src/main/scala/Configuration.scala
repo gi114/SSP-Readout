@@ -31,6 +31,8 @@ trait Configuration {
 
   val agentsNumber = 1746608
 
+  var count = 0                                                     /**Counting the loops performed**/
+
   val netSize: Int = maxJunction + 1                                /** Network Size **/
 
   val exitsCount: Array[(Int, Int)] = Array.range(0, netSize) zip new Array[Int](netSize)   /** This is the main data structure holding exits numbers and corresponding number of agents
@@ -46,7 +48,7 @@ trait Configuration {
 
   val DIAGONAL_time: Double = 102.1/agentVelocity                   /** **/
 
-  var currentMultiple = 1; val binSize = 10; val binCycle = 100000  /** **/
+  var currentMultiple = 0; val binSize = 10; val binCycle = 100000  /** **/
 
   val map: Map[Int, ListBuffer[Int]] = Map()                        /** Holds the bin number, hence 0 for 0-9, 1 for 10-19, 2 for 20-29 and so on, and the list of exits that
                                                                         are categorized to belong to the corresponding bin based on the current number of agents. It is dynamically updated **/
