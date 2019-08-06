@@ -26,8 +26,10 @@ class ConstructsSpec extends FreeSpec with MockitoSugar with BeforeAndAfterAll w
         result.map(elem => {
           val exitValue = elem._2
           val bin = construct.getBin(exitValue)
+
+          // bin 0 takes exits with value from 0-9
           if (exitValue < binSize) bin shouldEqual 0
-          else bin shouldEqual (exitValue/binSize - 2)
+          else bin shouldEqual (exitValue/binSize)
         })
 
       }

@@ -2,5 +2,4 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mWhen running the simulation[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  When releasing results[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  - Fill exits counts with appropriate counts[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  - Allocate exits into the right bin *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    3 did not equal 1 (ConstructsSpec.scala:30)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - Allocate exits into the right bin[0m[0m
