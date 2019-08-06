@@ -1,6 +1,8 @@
 import akka.actor.{ActorRef, ActorSystem, Props}
-
+import scala.concurrent.duration._
 import scala.collection.mutable.ListBuffer
+import scala.concurrent.ExecutionContext
+import scala.language.postfixOps
 
 class Constructs() extends Configuration with Constructable {
 
@@ -8,7 +10,12 @@ class Constructs() extends Configuration with Constructable {
 
   private val actor: ActorRef = actorSystem.actorOf(Props[ActorTalk], name = "BinsProcessor")
 
+  implicit val executionContext = ExecutionContext.Implicits.global
+
   def run(): Unit = {
+
+    actorSystem.scheduler.scheduleWithFixedDelay(3 seconds, 5 seconds, actor, BinStats(34))
+
     for (_ <- 0 to agentsNumber) {
 
       count += 1
@@ -62,7 +69,7 @@ class Constructs() extends Configuration with Constructable {
 
   def isMultiple: Boolean = {
     // Why make it an Integer? You only interested in whole number before decimal point to know how many times you passed the binCycle
-    val newMultiple = count/binCycle
+    val newMultiple = (totalTime/binCycle).toInt
 
     // When you obtain a new multiple, new time you passed the binCycle, then you update your bins
 
@@ -90,7 +97,7 @@ class Constructs() extends Configuration with Constructable {
     exitsCount.foreach {
       e => elementUpdate(e)
     }
-    actor ! BinStats(map.head._1)
+    //actor ! BinStats(map.head._1)
     //count/(agentsNumber/2)
     //empty your bins for your next cycle
     if (runTime != agentsNumber + 1) {
