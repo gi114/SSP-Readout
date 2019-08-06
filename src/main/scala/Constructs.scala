@@ -1,6 +1,7 @@
 import akka.actor.{ActorRef, ActorSystem, Props}
+
 import scala.concurrent.duration._
-import scala.collection.mutable.ListBuffer
+import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.concurrent.ExecutionContext
 import scala.language.postfixOps
 
@@ -12,7 +13,7 @@ class Constructs() extends Configuration with Constructable {
 
   implicit val executionContext = ExecutionContext.Implicits.global
 
-  def run(): Unit = {
+  def run(): ArrayBuffer[(Int, Int)] = {
 
     actorSystem.scheduler.scheduleWithFixedDelay(3 seconds, 5 seconds, actor, BinStats(34))
 
@@ -51,7 +52,7 @@ class Constructs() extends Configuration with Constructable {
 
 
     actorSystem.terminate()
-    //exitsCount.foreach(e => println(e._1, e._2))
+    exitsCount
     //println(totalTime)
 
   }

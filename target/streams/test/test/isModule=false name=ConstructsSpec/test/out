@@ -1,29 +1,6 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mConstructsSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mWhen running the simulation[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  When releasing results[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  - Fill exits counts with appropriate counts *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    java.lang.NullPointerException:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at java.base/java.lang.reflect.Array.getLength(Native Method)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1347)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at ConstructsSpec.$anonfun$new$3(ConstructsSpec.scala:16)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.FreeSpecLike$$anon$1.apply(FreeSpecLike.scala:405)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - Fill exits counts with appropriate counts[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  - Allocate exits into the right bin *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    java.lang.NullPointerException:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at java.base/java.lang.reflect.Array.getLength(Native Method)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at scala.collection.ArrayOps$.map$extension(ArrayOps.scala:946)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at ConstructsSpec.$anonfun$new$5(ConstructsSpec.scala:24)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.FreeSpecLike$$anon$1.apply(FreeSpecLike.scala:405)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    3 did not equal 1 (ConstructsSpec.scala:30)[0m[0m

@@ -1,34 +1,17 @@
 [0m[[0m[0mdebug[0m] [0m[0mThe Constructs has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(notifyAll,[Default]), UsedName(exitsCount,[Default]), UsedName(run$default$1,[Default]), UsedName(updateBins,[Default]), UsedName(run,[Default]), UsedName(finalize,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]), UsedName(notifyAll,[Default]), UsedName(run,[Default]).[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
 [0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) Constructs: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) Constructs.[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of ConstructsSpec: Set(UsedName(exitsCount,[Default]), UsedName(run,[Default]))[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe Configuration has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(exitsCount,[Default]), UsedName(finalize,[Default]), UsedName(notifyAll,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) Configuration: Set(); now invalidating by inheritance (internally).[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) Configuration.[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of ConstructsSpec: Set(UsedName(exitsCount,[Default]))[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe Constructable has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(exitsCount,[Default]), UsedName(finalize,[Default]), UsedName(notifyAll,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) Constructable: Set(ConstructsSpec); now invalidating by inheritance (internally).[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ConstructsSpec...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(ConstructsSpec)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ConstructsSpec)[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) Constructable.[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of ConstructsSpec: Set(UsedName(exitsCount,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of ConstructsSpec: Set(UsedName(run,[Default]))[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/giulia/Documents/Biocomputation/SSP-Readout/src/test/scala/ConstructsSpec.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set(NamesChange(Constructs,ModifiedNames(changes = UsedName(notifyAll,[Default]), UsedName(exitsCount,[Default]), UsedName(run$default$1,[Default]), UsedName(updateBins,[Default]), UsedName(run,[Default]), UsedName(finalize,[Default]))), NamesChange(Configuration,ModifiedNames(changes = UsedName(exitsCount,[Default]), UsedName(finalize,[Default]), UsedName(notifyAll,[Default]))), NamesChange(Constructable,ModifiedNames(changes = UsedName(exitsCount,[Default]), UsedName(finalize,[Default]), UsedName(notifyAll,[Default]))))[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set(NamesChange(Constructs,ModifiedNames(changes = UsedName(finalize,[Default]), UsedName(notifyAll,[Default]), UsedName(run,[Default]))))[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(ConstructsSpec)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
@@ -41,11 +24,11 @@
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/giulia/Documents/Biocomputation/SSP-Readout/target/scala-2.13/test-classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.2.5:compile for Scala 2.13.0[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.2.5:compile for Scala 2.13.0[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 1f67edb6 for Scala compiler version 2.13.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 4305e0ae for Scala compiler version 2.13.0[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/giulia/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.0.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/home/giulia/Documents/Biocomputation/SSP-Readout/target/scala-2.13/test-classes:/home/giulia/Documents/Biocomputation/SSP-Readout/target/scala-2.13/classes:/home/giulia/.ivy2/cache/org.scalatest/scalatest_2.13/bundles/scalatest_2.13-3.0.8.jar:/home/giulia/.ivy2/cache/org.scalactic/scalactic_2.13/bundles/scalactic_2.13-3.0.8.jar:/home/giulia/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.13.0.jar:/home/giulia/.ivy2/cache/org.scala-lang.modules/scala-xml_2.13/bundles/scala-xml_2.13-1.2.0.jar:/home/giulia/.ivy2/cache/org.mockito/mockito-core/jars/mockito-core-2.23.0.jar:/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy/jars/byte-buddy-1.9.0.jar:/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy-agent/jars/byte-buddy-agent-1.9.0.jar:/home/giulia/.ivy2/cache/org.objenesis/objenesis/jars/objenesis-2.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.355689741 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/giulia/Documents/Biocomputation/SSP-Readout/target/scala-2.13/test-classes:/home/giulia/Documents/Biocomputation/SSP-Readout/target/scala-2.13/classes:/home/giulia/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/jars/akka-actor_2.13-2.6.0-M5.jar:/home/giulia/.ivy2/cache/com.typesafe/config/bundles/config-1.3.4.jar:/home/giulia/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.13/jars/scala-java8-compat_2.13-0.9.0.jar:/home/giulia/.ivy2/cache/org.scalatest/scalatest_2.13/bundles/scalatest_2.13-3.0.8.jar:/home/giulia/.ivy2/cache/org.scalactic/scalactic_2.13/bundles/scalactic_2.13-3.0.8.jar:/home/giulia/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.13.0.jar:/home/giulia/.ivy2/cache/org.scala-lang.modules/scala-xml_2.13/bundles/scala-xml_2.13-1.2.0.jar:/home/giulia/.ivy2/cache/org.mockito/mockito-core/jars/mockito-core-2.23.0.jar:/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy/jars/byte-buddy-1.9.0.jar:/home/giulia/.ivy2/cache/net.bytebuddy/byte-buddy-agent/jars/byte-buddy-agent-1.9.0.jar:/home/giulia/.ivy2/cache/org.objenesis/objenesis/jars/objenesis-2.6.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.470626065 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m

@@ -4,7 +4,7 @@ import scala.collection.mutable.ListBuffer
 
 case class BinStats(map: Int)
 
-class ActorTalk extends Actor with Configuration {
+class ActorTalk extends Actor {
 
   override def receive: Receive = {
     case BinStats(map) => display(map)

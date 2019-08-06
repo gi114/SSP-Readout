@@ -1,6 +1,5 @@
 import scala.annotation.tailrec
-import scala.collection.mutable.ListBuffer
-import scala.collection.mutable.Map
+import scala.collection.mutable.{ArrayBuffer, ListBuffer, Map}
 
 trait Configuration {
 
@@ -35,7 +34,7 @@ trait Configuration {
 
   val netSize: Int = maxJunction + 1                                /** Network Size **/
 
-  val exitsCount: Array[(Int, Int)] = Array.range(0, netSize) zip new Array[Int](netSize)   /** This is the main data structure holding exits numbers and corresponding number of agents
+  val exitsCount: ArrayBuffer[(Int, Int)] = ArrayBuffer.range(0, netSize) zip new Array[Int](netSize)   /** This is the main data structure holding exits numbers and corresponding number of agents
                                                                                                 It is initialized with 0 counts of agents and will be filled during simulation **/
 
   val split_junctions: List[Int] = splitJunctions(maxJunction)      /** List of Split Junctions for the y coordinate, all others are pass junctions **/
