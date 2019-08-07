@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190806144030"/>
+		date="20190807084213"/>
 	<dependencies>
 		<module organisation="org.mockito" name="mockito-core">
 			<revision name="2.23.0" status="release" pubdate="20181005082007" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/mockito/mockito" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">

@@ -1,7 +1,8 @@
 import akka.actor.{ActorRef, ActorSystem, Props}
 
+import scala.collection.mutable
 import scala.concurrent.duration._
-import scala.collection.mutable.{ArrayBuffer, ListBuffer}
+import scala.collection.mutable.{ArrayBuffer, ListBuffer, Map}
 import scala.concurrent.ExecutionContext
 import scala.language.postfixOps
 
@@ -51,6 +52,7 @@ class Constructs() extends Configuration with Constructable {
     //TODO: Display bins using scalaJS
 
 
+    display()
     actorSystem.terminate()
     exitsCount
     //println(totalTime)
@@ -98,12 +100,6 @@ class Constructs() extends Configuration with Constructable {
     exitsCount.foreach {
       e => elementUpdate(e)
     }
-    //actor ! BinStats(map.head._1)
-    //count/(agentsNumber/2)
-    //empty your bins for your next cycle
-    if (runTime != agentsNumber + 1) {
-      map.clear()
-    }
   }
 
   /**
@@ -119,8 +115,30 @@ class Constructs() extends Configuration with Constructable {
     /**check if binKey exists in map and add it if not**/
     if (!map.contains(binKey)) map.addOne((binKey, ListBuffer.empty[Int]))
 
+    //add to current bin if not there yet
     val mutableList = map(binKey)
-    mutableList.append(e._1)
+    if (!mutableList.contains(e._1)) {
+      mutableList.append(e._1)
+      if (binKey > 0) search(binKey - 1, e._1)
+    }
+  }
+
+  /**
+    * Search in the previous bin
+    *   if not in previous bin, just return
+    *   else remove exit from previous bin
+    *
+    * @param previousBin bin to search where exit could have been located at previous runs
+    * @param exit what exit to search for
+    */
+
+  def search(previousBin: Int, exit: Int): Unit = {
+    val mutableList = map(previousBin)
+    val l1 = mutableList.length
+    if (mutableList.contains(exit)) {
+      mutableList -= exit
+      assert(mutableList.length == l1 - 1)
+    }
   }
 
   def getBin(exitValue: Int): Int = exitValue/binSize
