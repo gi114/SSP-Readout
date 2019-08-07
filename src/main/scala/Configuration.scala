@@ -49,7 +49,7 @@ trait Configuration {
 
   var currentMultiple = 0; val binSize = 10; val binCycle = 100000  /** **/
 
-  val map: Map[Int, ListBuffer[Int]] = Map()                        /** Holds the bin number, hence 0 for 0-9, 1 for 10-19, 2 for 20-29 and so on, and the list of exits that
+  val map: Map[Int, ListBuffer[Int]] = Map(0 -> ListBuffer.empty)   /** Holds the bin number, hence 0 for 0-9, 1 for 10-19, 2 for 20-29 and so on, and the list of exits that
                                                                         are categorized to belong to the corresponding bin based on the current number of agents. It is dynamically updated **/
 
   val exit_count = new Array[Int](netSize)                          /** Initializing output of correct exits count **/

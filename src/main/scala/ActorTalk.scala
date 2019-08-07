@@ -2,7 +2,7 @@ import akka.actor.Actor
 
 import scala.collection.mutable.ListBuffer
 
-case class BinStats(map: Int)
+case class BinStats(map: Map[Int, ListBuffer[Int]])
 
 class ActorTalk extends Actor {
 
@@ -11,8 +11,12 @@ class ActorTalk extends Actor {
   }
 
 
-  def display(map: Int) = {
-    print(map)
+  def display(map: Map[Int, ListBuffer[Int]]) = {
+    map.foreach(m => {
+      println("Bin: " + m._1)
+      m._2.foreach(e => print(e + " -- "))
+      println()
+    })
   }
 
 }

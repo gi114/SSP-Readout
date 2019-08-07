@@ -33,6 +33,8 @@ class ConstructsSpec extends FreeSpec with MockitoSugar with BeforeAndAfterAll w
         })
 
       }
+
+      // check none of the exits is positioned twice and they are all positioned once
     }
   }
 }

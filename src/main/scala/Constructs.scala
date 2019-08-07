@@ -1,8 +1,6 @@
 import akka.actor.{ActorRef, ActorSystem, Props}
-
-import scala.collection.mutable
 import scala.concurrent.duration._
-import scala.collection.mutable.{ArrayBuffer, ListBuffer, Map}
+import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.concurrent.ExecutionContext
 import scala.language.postfixOps
 
@@ -16,7 +14,7 @@ class Constructs() extends Configuration with Constructable {
 
   def run(): ArrayBuffer[(Int, Int)] = {
 
-    actorSystem.scheduler.scheduleWithFixedDelay(3 seconds, 5 seconds, actor, BinStats(34))
+    actorSystem.scheduler.scheduleWithFixedDelay(3 seconds, 5 seconds, actor, BinStats(map.toMap))
 
     for (_ <- 0 to agentsNumber) {
 

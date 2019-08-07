@@ -2,44 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34337b96-ec9d-4da5-92cf-78aa2e5a6fc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SSP-Readout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SSP-Readout.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ActorTalk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ActorTalk.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Configuration.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Configuration.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Constructs.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Constructs.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sbt_2.12/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sbt_2.12/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sbt_2.12/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sbt_2.12/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources_2.12/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources_2.12/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources_2.12/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/default/ssp-readout$sources_2.12/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sbt_2.12-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/resolution-cache/reports/default-ssp-readout$sources_2.12-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/ConstructsSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/ConstructsSpec.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,17 +30,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Configuration.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="585">
+              <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Constructs.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+            <state relative-caret-position="664">
+              <caret line="146" column="11" lean-forward="true" selection-start-line="144" selection-start-column="4" selection-end-line="148" selection-end-column="6" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -82,11 +51,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ActorTalk.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/ConstructsSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="540">
+              <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -170,11 +142,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/Simulation.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/Actors.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ActorTalk.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Constructable.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/ConstructsSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Configuration.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/ConstructsSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Constructs.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ActorTalk.scala" />
       </list>
     </option>
   </component>
@@ -307,12 +279,12 @@
       <updated>1564406930839</updated>
       <workItem from="1564406940409" duration="23794000" />
       <workItem from="1564929185814" duration="2482000" />
-      <workItem from="1565181725524" duration="3407000" />
+      <workItem from="1565181725524" duration="5627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37893000" />
+    <option name="totallyTimeSpent" value="40113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -408,30 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ActorTalk.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Constructable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/ConstructsSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/srcs/akka-actor_2.13-2.6.0-M5-sources.jar!/akka/actor/Scheduler.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2145">
@@ -467,19 +415,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Configuration.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Constructable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ConstructsSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Constructs.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        <state relative-caret-position="664">
+          <caret line="146" column="11" lean-forward="true" selection-start-line="144" selection-start-column="4" selection-end-line="148" selection-end-column="6" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Configuration.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ActorTalk.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
